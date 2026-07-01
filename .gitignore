@@ -1,0 +1,16 @@
+/target
+test_data_*
+methods.md
+
+# Generated test outputs
+o3/
+test_output*
+python_output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Benchmark intermediate logs
+benchmarks/rust_bench_output.txt

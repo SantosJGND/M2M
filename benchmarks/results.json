@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "date": "2026-07-01",
+    "test_data": "test_data_larger",
+    "language": "python",
+    "num_files": 6,
+    "max_reads": 500000,
+    "frequency_threshold": 0.1,
+    "iterations": 30
+  },
+  "rust": {
+    "parse_bam_files": {
+      "mean_ms": 6.0454,
+      "std_ms": 0.07399999999999984,
+      "min_ms": 5.9733,
+      "max_ms": 6.1213
+    },
+    "to_matrix_presence_absence": {
+      "mean_ms": 6.2625,
+      "std_ms": 0.07690000000000019,
+      "min_ms": 6.1864,
+      "max_ms": 6.3402
+    },
+    "to_shared_mut_matrix": {
+      "mean_ms": 6.2713,
+      "std_ms": 0.06910000000000016,
+      "min_ms": 6.2027,
+      "max_ms": 6.3409
+    },
+    "standardize_by_files_total": {
+      "mean_ms": 6.2816,
+      "std_ms": 0.08624999999999972,
+      "min_ms": 6.2003,
+      "max_ms": 6.3728
+    },
+    "full_pipeline": {
+      "mean_ms": 6.6008,
+      "std_ms": 0.09200000000000008,
+      "min_ms": 6.5127,
+      "max_ms": 6.6967
+    }
+  },
+  "python": {
+    "parse_bam_files": {
+      "mean_ms": 16.957184133267827,
+      "std_ms": 1.2773902550289595
+    },
+    "to_matrix_presence_absence": {
+      "mean_ms": 16.265369699794974,
+      "std_ms": 1.1131082376138548
+    },
+    "to_shared_mut_matrix": {
+      "mean_ms": 12.721698433172909,
+      "std_ms": 1.5700226289845383
+    },
+    "standardize_by_files_total": {
+      "mean_ms": 12.53459603334098,
+      "std_ms": 0.47688212445175693
+    },
+    "full_pipeline": {
+      "mean_ms": 13.151925500096695,
+      "std_ms": 2.1806912227725728
+    }
+  }
+}

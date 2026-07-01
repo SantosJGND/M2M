@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "date": "2026-07-01",
+    "test_data": "test_data_larger",
+    "language": "rust"
+  },
+  "results": {
+    "parse_bam_files": {
+      "mean_ms": 6.0454,
+      "std_ms": 0.07399999999999984,
+      "min_ms": 5.9733,
+      "max_ms": 6.1213
+    },
+    "to_matrix_presence_absence": {
+      "mean_ms": 6.2625,
+      "std_ms": 0.07690000000000019,
+      "min_ms": 6.1864,
+      "max_ms": 6.3402
+    },
+    "to_shared_mut_matrix": {
+      "mean_ms": 6.2713,
+      "std_ms": 0.06910000000000016,
+      "min_ms": 6.2027,
+      "max_ms": 6.3409
+    },
+    "standardize_by_files_total": {
+      "mean_ms": 6.2816,
+      "std_ms": 0.08624999999999972,
+      "min_ms": 6.2003,
+      "max_ms": 6.3728
+    },
+    "full_pipeline": {
+      "mean_ms": 6.6008,
+      "std_ms": 0.09200000000000008,
+      "min_ms": 6.5127,
+      "max_ms": 6.6967
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "date": "2026-07-01",
+    "test_data": "test_data_larger",
+    "num_files": 6,
+    "max_reads": 500000,
+    "frequency_threshold": 0.1,
+    "language": "python",
+    "iterations": 30
+  },
+  "results": {
+    "parse_bam_files": {
+      "mean_ms": 16.957184133267827,
+      "std_ms": 1.2773902550289595
+    },
+    "to_matrix_presence_absence": {
+      "mean_ms": 16.265369699794974,
+      "std_ms": 1.1131082376138548
+    },
+    "to_shared_mut_matrix": {
+      "mean_ms": 12.721698433172909,
+      "std_ms": 1.5700226289845383
+    },
+    "standardize_by_files_total": {
+      "mean_ms": 12.53459603334098,
+      "std_ms": 0.47688212445175693
+    },
+    "full_pipeline": {
+      "mean_ms": 13.151925500096695,
+      "std_ms": 2.1806912227725728
+    }
+  }
+}

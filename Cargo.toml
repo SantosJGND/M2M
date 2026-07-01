@@ -1,0 +1,30 @@
+[package]
+name = "mapping_to_matrix"
+version = "0.3.0"
+edition = "2021"
+
+[dependencies]
+ahash = "0.8"
+bam = "0.1.4"
+bio = "2.3.0"
+clap = { version = "4.5.16", features = ["derive"] }
+itertools = "0.10.1"
+ordered-float = "4.2.2"
+rand = { version = "0.8.5", features = ["std"] }
+rayon = "1.10"
+rust-htslib = "0.47.0"
+speedytree = "0.1.0"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
+[profile.release]
+opt-level = 'z'     # Optimize for size
+lto = true          # Enable link-time optimization
+codegen-units = 1   # Reduce number of codegen units to increase optimizations
+panic = 'abort'     # Abort on panic
+strip = true        # Strip symbols from binary*
