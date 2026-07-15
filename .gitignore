@@ -14,3 +14,8 @@ __pycache__/
 
 # Benchmark intermediate logs
 benchmarks/rust_bench_output.txt
+
+# cargo intermediates files
+*build/
+*debug/
+*deps/
